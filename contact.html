@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/contact.css" />
+  <link rel="stylesheet" href="/styles/headerFooter.css" />
+<link rel="stylesheet" href="/styles/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="/styles/global.css">
+
+  <head>
+    <title>Arch Events | Contact</title>
+    <link rel="icon" type="image/x-icon" href="/images/ArchEvent.ico" />
+  </head>
+
+  <body>
+    <!-- Header  -->
+    <header>
+     <!-- Header is initialized in JS   -->
+    </header>
+
+    <!-- hero  section   -->
+    <section class="contactUsSectionImg">
+      <!-- video with  autoplay mode -->
+
+      <!-- <video class="hero-video" id="heroVideo" autoplay loop muted playsinline>
+        <source
+          src="https://player.vimeo.com/external/368342695.sd.mp4?s=32d1dbdb51a79c54621631f0d31650c4b8d65e43&profile_id=164&oauth2_token_id=57447761"
+          type="video/mp4"
+        />
+      </video> -->
+      <h1 class="contact">Hello</h1>
+      <hr />
+      <p class="blink">SCROLL</p>
+      <div id="mute-control" onclick="mute()">
+        <i class="fa-sharp fa-solid fa-volume-high"></i>
+      </div>
+    </section>
+    <main>
+      <div class="contact-container" style="margin-top: 20px;">
+        <div class="inquiry-form">
+          <form onsubmit="sendEmail(); return false;">
+            <div>
+              <h1 style="font-weight: bold ;font-size: 20px;">ENTER YOUR DETAILS AND WE'LL GET BACK TO YOU!</h1>
+            </div>
+            <div class="name">
+              <label for="name" required>Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="email">
+              <label for="email" required>Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="phone">
+              <label for="phoneNo">Phone:</label>
+              <input type="number" id="phoneNo" name="phoneNo" />
+            </div>
+            <div class="how-help">
+              <label for="help">How Can We help?</label>
+              <input type="text" id="help" name="help" />
+            </div>
+      
+            <div class="comment">
+              <label for="comments">Comments:</label>
+              <textarea id="comments" name="comments"></textarea>
+            </div>
+            <div class="tellMoreAbout">
+              <label for="tellMore">Tell Us More About Your Event</label>
+              <textarea id="tellMore" name="tellMore"></textarea>
+            </div>
+      
+            <button type="submit" class="submitBut">Send</button>
+          </form>
+        </div>
+        <div class="form-sideImg"></div>
+      </div>
+      <hr/>
+
+      <!-- here is the testimonials slider  -->
+      <h2 style="color:#123456;font-size: 30px;">Testimonials</h2>
+      <div class="testimonials-section">
+       
+        <span onclick="next()"><i class="fa-solid fa-angles-left"></i></span>
+        <div class="testimonials">
+          <div id="text-scroll"></div>
+        </div>
+        <span onclick="prev()"><i class="fa-solid fa-angles-right"></i></span>
+       <a href="" class="googleReviews">Google Reviews</a>
+      </div>
+    </div>
+ 
+    </main>
+
+    <!-- here is the common footer  -->
+    <footer>
+  <!-- Footer is initialized in JS   -->
+    </footer>
+
+    <script src="/scripts/contact.js"></script>
+    <script src="/scripts/headerFooter.js"></script>
+  </body>
+</html>
